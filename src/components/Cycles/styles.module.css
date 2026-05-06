@@ -1,8 +1,13 @@
 .cycles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
 }
 
 .cycleDots {
   display: flex;
+  gap: 0.7rem;
 }
 
 .cycleDot {
