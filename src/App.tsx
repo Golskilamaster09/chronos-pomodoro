@@ -11,6 +11,8 @@ import { Menu } from "./components/Menu";
 import { CountDown } from "./components/CountDown";
 import { Defaultinput } from "./components/Defaultinput";
 import { Cycles } from "./components/Cycles";
+import { Defaultbutton } from "./components/DefaultButton";
+import { PlayCircleIcon } from "lucide-react";
 
 export function App() {
   return (
@@ -45,7 +47,7 @@ export function App() {
           </div>
 
           <div className="formRow">
-            <button>Enviar</button>
+            <Defaultbutton icon={<PlayCircleIcon />} />
           </div>
         </form>
       </Container>
