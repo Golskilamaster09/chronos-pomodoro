@@ -12,8 +12,8 @@ import { CountDown } from "./components/CountDown";
 import { Defaultinput } from "./components/Defaultinput";
 import { Cycles } from "./components/Cycles";
 import { Defaultbutton } from "./components/DefaultButton";
-import { PlayCircleIcon } from "lucide-react";
 import { Footer } from "./components/Footer";
+import { PlayCircleIcon } from "lucide-react";
 
 export function App() {
   return (
