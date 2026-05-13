@@ -2,6 +2,7 @@ import { PlayCircleIcon } from "lucide-react";
 import { Cycles } from "../Cycles";
 import { Defaultbutton } from "../DefaultButton";
 import { Defaultinput } from "../Defaultinput";
+import { useTaskContext } from "../../contexts/TaskContext/useTaskContext";
 
 export function MainForm() {
   return (
@@ -16,7 +17,7 @@ export function MainForm() {
       </div>
 
       <div className="formRow">
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Proximo intervalo é de 25min</p>
       </div>
 
       <div className="formRow">
