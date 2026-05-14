@@ -1,4 +1,4 @@
-import { PlayCircleIcon } from "lucide-react";
+import { PlayCircleIcon, StopCircle, StopCircleIcon } from "lucide-react";
 import { Cycles } from "../Cycles";
 import { Defaultbutton } from "../DefaultButton";
 import { Defaultinput } from "../Defaultinput";
@@ -80,7 +80,22 @@ export function MainForm() {
       )}
 
       <div className="formRow">
-        <Defaultbutton icon={<PlayCircleIcon />} />
+        {!state.activeTask ? (
+          <Defaultbutton
+            aria-label="Iniciar nova tarefa"
+            title="Iniciar nova tarefa"
+            type="submit"
+            icon={<PlayCircleIcon />}
+          />
+        ) : (
+          <Defaultbutton
+            aria-label="Interromper tarefa atual"
+            title="Interromper tarefa atual"
+            type="button"
+            color="red"
+            icon={<StopCircleIcon />}
+          />
+        )}
       </div>
     </form>
   );
